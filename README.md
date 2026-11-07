@@ -7,7 +7,7 @@ Jekyll site for GitHub Pages. The layout is adapted from
 Live URL (after enabling Pages): https://santoshmokashi86.github.io/Portfolio/
 
 ## Publishing
-1. Repo **Settings → Pages → Build and deployment**: Source = *Deploy from a branch*, Branch = `main` (or this branch), folder `/ (root)`.
+1. Repo **Settings → Pages → Build and deployment**: Source = *Deploy from a branch*, Branch = `claude/gracious-wright-skx7f2`, folder `/ (root)`. Every push to that branch rebuilds the site.
 2. To serve at `https://santoshmokashi86.github.io/` instead, rename the repo to `santoshmokashi86.github.io` and set `baseurl: ""` in `_config.yml`.
 
 ## Updating content (no HTML needed)
