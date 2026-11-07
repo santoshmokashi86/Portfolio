@@ -9,4 +9,4 @@ Modern AI accelerators can perform trillions of operations per second, yet much 
 
 In my DRAM scheduling project for the Micron Memory Awards, we asked a simple question: *what if the memory controller knew what the accelerator was about to execute?* Making scheduling execution-aware, and evaluating it with Ramulator and SCALE-Sim under JEDEC DDR5 timing, reduced DRAM activity by about 50% and saved up to 33% energy.
 
-*(This is a starter post. Edit or replace it in `posts/`.)*
+*(This is a starter post. Edit or replace it in `_posts/`.)*

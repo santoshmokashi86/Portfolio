@@ -1,0 +1,11 @@
+---
+title: Blog
+---
+
+### Blog
+
+<ul class="posts">
+{% for post in site.categories.portfolio1 %}
+  <li><span class="date">{{ post.date | date: "%Y/%m/%d" }}</span> <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>

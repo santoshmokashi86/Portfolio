@@ -10,6 +10,14 @@ Live URL (after enabling Pages): https://santoshmokashi86.github.io/Portfolio/
 1. Repo **Settings → Pages → Build and deployment**: Source = *Deploy from a branch*, Branch = `claude/gracious-wright-skx7f2`, folder `/ (root)`. Every push to that branch rebuilds the site.
 2. To serve at `https://santoshmokashi86.github.io/` instead, rename the repo to `santoshmokashi86.github.io` and set `baseurl: ""` in `_config.yml`.
 
+## Two designs
+| URL | Look | Files |
+|-----|------|-------|
+| `/Portfolio/` | Sidebar layout (after eugenielai.github.io) | `index.md`, `publications.md`, `projects.md`, `news.md`, `blog.md`, `_layouts/default.html`, `assets/css/style.css` |
+| `/Portfolio/portfolio1/` | Single-column menu-bar layout (after skudlur.github.io / hugo-xmin) | `portfolio1/*.md`, `portfolio1/_posts/`, `_layouts/xmin.html`, `assets/css/xmin.css`, `_data/portfolio1.yml` (menu) |
+
+Both read the same `_data/publications.yml`, `_data/projects.yml` and `_data/news.yml`, so papers, projects and news only need to be added once.
+
 ## Updating content (no HTML needed)
 | What | File |
 |------|------|
@@ -18,7 +26,7 @@ Live URL (after enabling Pages): https://santoshmokashi86.github.io/Portfolio/
 | Papers | `_data/publications.yml` |
 | Projects + GitHub repo links | `_data/projects.yml` (`research:` / `engineering:`; `featured: true` shows on home page) |
 | News items (sidebar shows latest 4) | `_data/news.yml` |
-| Blog posts | `_posts/YYYY-MM-DD-title.md` |
+| Blog posts | `_posts/YYYY-MM-DD-title.md` (sidebar design) · `portfolio1/_posts/YYYY-MM-DD-title.md` (portfolio1) |
 | CV PDF | `docs/cv/Santosh_Mokashi_CV.pdf` |
 
 Profile photo: drop an image at `assets/img/profile.jpg` and set `avatar: "/assets/img/profile.jpg"`.

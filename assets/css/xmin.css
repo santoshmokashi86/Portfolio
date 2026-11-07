@@ -1,0 +1,66 @@
+/* Single-column "xmin"-style layout (after the hugo-xmin theme, MIT, Yihui Xie) */
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+  line-height: 1.5;
+  font-family: Optima, Candara, Calibri, Arial, sans-serif;
+  color: #222;
+}
+code, pre { font-family: "Lucida Console", Monaco, monospace; font-size: 85%; }
+a { color: #0645ad; }
+a:visited { color: #551a8b; }
+
+/* header and footer */
+.menu { padding: 0; text-align: center; }
+.menu li { display: inline-block; margin: 2px 1px; }
+.article-meta, .menu a {
+  text-decoration: none;
+  background: #eee;
+  padding: 5px;
+  border-radius: 5px;
+}
+.menu a { color: #0645ad; }
+.menu a.active { background: #ddd; color: #222; }
+.article-meta, footer { text-align: center; }
+.article-meta h1 { margin: .3em 0; }
+.article-meta .date { font-size: 1em; font-weight: normal; margin: .2em 0; }
+.title { font-size: 1.1em; }
+footer { font-size: .95em; margin: 2em 0 1em; }
+footer a { text-decoration: none; }
+hr { border-style: dashed; color: #ddd; }
+
+/* home */
+.avatar {
+  float: right; max-width: 30%; min-width: 40px; width: 250px; height: 250px;
+  border-radius: 50%; overflow: hidden; margin: 0 0 1em 1.5em;
+}
+.avatar img { display: block; width: 100%; height: 100%; object-fit: cover; }
+h2.tagline { font-style: italic; font-weight: normal; font-size: 1.2em; }
+.clear { clear: both; }
+
+/* lists */
+.posts, .news { padding-left: 1.2em; }
+.date { font-family: "Lucida Console", Monaco, monospace; font-size: 85%; color: #666; margin-right: .5em; }
+.status { font-size: 80%; background: #fff4e0; border: 1px solid #f3d9a6; border-radius: 4px; padding: 0 5px; color: #a66300; }
+.project { margin-bottom: 1.4em; }
+.project h3 { margin-bottom: .2em; }
+.project .meta { color: #666; font-size: 90%; margin: 0 0 .4em; }
+.project p { margin: .3em 0; }
+.tags { font-size: 85%; color: #666; }
+
+/* misc elements */
+img, iframe, video { max-width: 100%; }
+main { hyphens: auto; }
+blockquote { background: #f9f9f9; border-left: 5px solid #ccc; padding: 3px 1em 3px; }
+pre { border: 1px solid #ddd; box-shadow: 5px 5px 5px #eee; padding: 1em; overflow-x: auto; }
+code { background: #f9f9f9; }
+pre code { background: none; }
+table { margin: auto; border-top: 1px solid #666; border-bottom: 1px solid #666; }
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee; }
+
+@media (max-width: 600px) {
+  .avatar { width: 140px; height: 140px; }
+}

@@ -1,0 +1,7 @@
+# Menu for the /portfolio1/ design (paths are relative to /portfolio1)
+nav:
+  - { title: Home, url: / }
+  - { title: About, url: /about.html }
+  - { title: Papers, url: /papers.html }
+  - { title: Projects, url: /projects.html }
+  - { title: Blog, url: /blog.html }

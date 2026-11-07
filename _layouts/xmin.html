@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/xmin.css" | relative_url }}" />
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        {% for item in site.data.portfolio1.nav %}
+        {% assign item_path = item.url | prepend: "/portfolio1" %}
+        <li><a href="{{ item_path | relative_url }}"{% if page.url == item_path %} class="active"{% endif %}>{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+      <hr/>
+    </nav>
+
+    {% if page.show_title %}
+    <div class="article-meta">
+      <h1><span class="title">{{ page.title }}</span></h1>
+      {% if page.date %}<h2 class="date">{{ page.date | date: "%Y/%m/%d" }}</h2>{% endif %}
+    </div>
+    {% endif %}
+
+    <main>
+    {{ content }}
+    </main>
+
+    <footer>
+      <hr/>
+      {% assign year = site.time | date: "%Y" %}&copy; <a href="{{ "/portfolio1/" | relative_url }}">{{ site.author }}</a> 2026{% if year != "2026" %} &ndash; {{ year }}{% endif %}
+      | <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+      | <a href="{{ site.linkedin }}">LinkedIn</a>
+      | <a href="{{ site.scholar }}">Google Scholar</a>
+      | <a href="mailto:{{ site.email }}">Email</a>
+      | <a href="{{ site.cv | relative_url }}">CV</a>
+    </footer>
+  </body>
+</html>

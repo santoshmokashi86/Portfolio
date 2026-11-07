@@ -45,6 +45,11 @@ defaults:
     values: { layout: post }
   - scope: { path: "" }
     values: { layout: default }
+  # Second design (single-column "xmin" style) lives under /portfolio1/
+  - scope: { path: "portfolio1" }
+    values: { layout: xmin }
+  - scope: { path: "portfolio1", type: posts }
+    values: { layout: xmin, show_title: true, permalink: "/portfolio1/posts/:title.html" }
 
 plugins:
   - jekyll-seo-tag
