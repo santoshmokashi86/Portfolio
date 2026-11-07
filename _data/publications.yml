@@ -1,0 +1,19 @@
+# Add new papers at the top. Fields:
+#   title, authors (wrap your own name in <strong>), venue, year, status (optional),
+#   links: list of {name, url}, summary (optional, 1–2 lines)
+- title: "PUF-Keyed Authenticated In-Modulator Encryption for Delta-Sigma Sensors in Open-Source SKY130"
+  authors: "Nithin P, <strong>S. H. Mokashi</strong>, and M. K. Pathak"
+  venue: "IEEE International Symposium on Circuits and Systems (ISCAS)"
+  year: 2027
+  status: "Submitted"
+  summary: "Hardware-rooted security for sensor front-ends: a physically unclonable function (PUF) keys authenticated encryption performed inside the delta-sigma modulator, implemented in the open-source SkyWater SKY130 process."
+  links: []
+
+- title: "FPGA-Accelerated RISC-V ISA Extensions for Efficient Neural Network Inference on Edge Devices"
+  authors: "Arya Parameshwara and <strong>Santosh Hanamappa Mokashi</strong>"
+  venue: "arXiv preprint arXiv:2511.06955 [cs.AR]"
+  year: 2025
+  summary: "Custom RISC-V core with four neural-network ISA extensions (FPGA.VCONV, FPGA.GEMM, FPGA.RELU, FPGA.CUSTOM) and integrated accelerators on a Xilinx PYNQ-Z2; 2.14× average latency speedup and 49.1% energy reduction measured on real hardware."
+  links:
+    - { name: "arXiv", url: "https://arxiv.org/abs/2511.06955" }
+    - { name: "PDF", url: "https://arxiv.org/pdf/2511.06955" }

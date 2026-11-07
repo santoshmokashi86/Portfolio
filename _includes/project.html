@@ -1,0 +1,12 @@
+{% assign p = include.project %}
+<div class="project">
+  <h3>{{ p.title }}</h3>
+  <p class="meta">{% if p.date %}{{ p.date }}{% endif %}{% if p.venue %}{% if p.date %} · {% endif %}{{ p.venue }}{% endif %}</p>
+  <p>{{ p.description }}</p>
+  {% if p.highlights %}<ul>{% for h in p.highlights %}<li>{{ h }}</li>{% endfor %}</ul>{% endif %}
+  <p class="links">
+    {% if p.repo %}<a class="btn" href="{{ p.repo }}">GitHub repo &rarr;</a>{% endif %}
+    {% for l in p.links %}<a class="btn" href="{{ l.url }}">{{ l.name }} &rarr;</a>{% endfor %}
+  </p>
+  {% if p.tags %}<p class="tags">{% for t in p.tags %}<span class="tag">{{ t }}</span>{% endfor %}</p>{% endif %}
+</div>

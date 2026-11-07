@@ -1,0 +1,8 @@
+<div class="pub">
+  <p class="pub-title">{{ include.pub.title }}{% if include.pub.status %} <span class="badge">{{ include.pub.status }}</span>{% endif %}</p>
+  <p class="pub-meta"><em>{{ include.pub.authors }}</em><br>
+    {{ include.pub.venue }}, {{ include.pub.year }}.
+    {% for l in include.pub.links %}[<a href="{{ l.url }}">{{ l.name }}</a>] {% endfor %}
+  </p>
+  {% if include.show_summary and include.pub.summary %}<p class="pub-summary">{{ include.pub.summary }}</p>{% endif %}
+</div>

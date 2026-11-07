@@ -1,0 +1,103 @@
+# Projects shown on /projects.html (and "featured: true" ones on the home page).
+# Fields: title, date, tags, description, highlights (list), repo (GitHub URL, optional), links (optional)
+
+research:
+  - title: "Execution-Aware DRAM Scheduling for Edge-AI Applications"
+    date: "Jan 2026"
+    featured: true
+    tags: [DRAM, Memory Scheduling, Near-Memory Computing, DDR5]
+    venue: "Micron Memory Awards (Taiwan) · two-person team"
+    description: "Tackles the memory wall in AI systems — where DRAM rather than compute limits performance and energy — with an execution-aware DRAM scheduling architecture for near-memory AI accelerators."
+    highlights:
+      - "Evaluated with Ramulator (DRAM) and SCALE-Sim (accelerator) under JEDEC-compliant timing constraints; compatible with DDR5."
+      - "~50% reduction in DRAM activity and up to 33% energy savings."
+
+  - title: "Energy-Efficient Near-Memory Systolic Accelerator with On-Chip Weight Compression"
+    date: "2026"
+    featured: true
+    tags: [AI Accelerator, Systolic Array, Near-Memory, Verilog]
+    description: "Near-memory systolic-array accelerator for edge-AI workloads that compresses weights on-chip to cut off-chip memory traffic and energy."
+    repo: "https://github.com/santoshmokashi86/near_memory_systolic_accelerator"
+
+  - title: "FPGA-Accelerated RISC-V ISA Extensions for Neural Network Inference"
+    date: "2025"
+    featured: true
+    tags: [RISC-V, FPGA, ISA Extensions, Edge AI]
+    description: "Custom FPGA-accelerated RISC-V system on a Xilinx PYNQ-Z2 with neural-network ISA extensions written in SystemVerilog; timing closure in Vivado."
+    highlights:
+      - "2.14× average latency speedup and 49.1% energy reduction on real hardware."
+    links:
+      - { name: "Paper", url: "https://arxiv.org/abs/2511.06955" }
+
+  - title: "AHB/APB Micro-architecture for a RISC-V SoC"
+    date: "Jan 2025 – Jan 2026"
+    featured: true
+    tags: [AMBA AHB, APB, SoC, RTL]
+    venue: "CHIPS, PES University · with the VLSI Society of India"
+    description: "Contributed RTL for the AHB protocol micro-architecture of a RISC-V-based SoC for embedded applications, and integrated an AHB–APB bus connecting three IP blocks at 100 MHz."
+    repo: "https://github.com/santoshmokashi86/AHB-Protocol"
+
+  - title: "PUF-Keyed Authenticated In-Modulator Encryption for Delta-Sigma Sensors"
+    date: "2026"
+    tags: [Hardware Security, PUF, Delta-Sigma, SKY130]
+    description: "Authenticated encryption keyed by a PUF and embedded within a delta-sigma sensor modulator, in the open-source SKY130 process. Submitted to IEEE ISCAS 2027."
+
+engineering:
+  - title: "Single-Cycle RISC-V Processor"
+    tags: [RISC-V, SystemVerilog]
+    description: "Single-cycle RV32 processor implemented in SystemVerilog."
+    repo: "https://github.com/santoshmokashi86/RISC-V-Core"
+
+  - title: "RISC-V Cores"
+    tags: [RISC-V, Micro-architecture]
+    description: "Collection of RISC-V core implementations."
+    repo: "https://github.com/santoshmokashi86/RISC-V-Cores"
+
+  - title: "Pipeline Register with Valid/Ready Handshake"
+    tags: [SystemVerilog, Micro-architecture]
+    description: "Single-stage pipeline register with a valid/ready handshake for back-pressure-safe datapaths."
+    repo: "https://github.com/santoshmokashi86/Single-Stage-Pipeline-Register-Valid-Ready-Handshake-"
+
+  - title: "ASIC Design Flow for a 64-bit ALU"
+    date: "May 2025"
+    tags: [RTL-to-GDSII, Cadence, PPA]
+    description: "RTL-to-GDSII flow for a 64-bit datapath with 16 logic functions, with a PPA focus: 20% lower power and 10% higher performance."
+    repo: "https://github.com/santoshmokashi86/Physical-Design"
+
+  - title: "6T SRAM Cell with Peripheral Circuits"
+    date: "Apr 2025"
+    tags: [SRAM, Custom Layout, Cadence Virtuoso]
+    description: "6T SRAM cell and peripherals in Cadence Virtuoso; layout verified with Assura DRC/LVS, read and write operations simulated."
+    repo: "https://github.com/santoshmokashi86/S-RAM"
+
+  - title: "Layered SystemVerilog Testbench for a SIPO Shift Register"
+    date: "Jan 2024"
+    tags: [Verification, SystemVerilog]
+    description: "Modular layered testbench with directed sequences, reaching 95% code and functional coverage."
+    repo: "https://github.com/santoshmokashi86/Layered-testbench-for-shift-register"
+
+  - title: "Tiny Tapeout Design"
+    tags: [ASIC, Open-Source Silicon]
+    description: "Verilog design prepared for the Tiny Tapeout open-source shuttle."
+    repo: "https://github.com/santoshmokashi86/Test_tiny-tapeout"
+
+  - title: "RISC-V SoC with VSD Squadron Mini"
+    tags: [RISC-V, Embedded C]
+    description: "Work from a one-month RISC-V SoC course on the VSD Squadron Mini board."
+    repo: "https://github.com/santoshmokashi86/RISC-V-VSD-Squadron-Mini"
+
+  - title: "Celsius-to-Fahrenheit Converter on FPGA"
+    tags: [FPGA, Verilog, Intel Quartus]
+    description: "Verilog HDL design implemented on an Intel FPGA board using Quartus Prime."
+    repo: "https://github.com/santoshmokashi86/Degree-Celsius-to-Fahrenheit-converter-using-FPGA"
+
+  - title: "Code in Place Final Project"
+    date: "2024"
+    tags: [Python, Stanford Code in Place]
+    description: "Final project from Stanford's Code in Place programming course (Apr–Jun 2024)."
+    repo: "https://github.com/santoshmokashi86/Code-in-place-project"
+
+  - title: "Rescuer Robot Car"
+    tags: [Robotics, Embedded]
+    description: "Robot car for disaster response (e.g. earthquakes) that navigates areas inaccessible to people to help locate those in need."
+    repo: "https://github.com/santoshmokashi86/Rescuer-robot-car"

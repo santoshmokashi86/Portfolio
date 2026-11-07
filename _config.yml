@@ -1,0 +1,53 @@
+# ------------------------------------------------------------------
+# Site settings — edit these first
+# ------------------------------------------------------------------
+title: "Santosh H. Mokashi"
+author: "Santosh Hanamappa Mokashi"
+description: "Research website of Santosh H. Mokashi — computer architecture, DRAM / memory systems and AI hardware."
+lang: en-US
+
+# This repo is served as a GitHub Pages *project site*:
+#   https://santoshmokashi86.github.io/Portfolio/
+# If you rename the repo to "santoshmokashi86.github.io", set baseurl to "".
+url: "https://santoshmokashi86.github.io"
+baseurl: "/Portfolio"
+
+# Profile picture shown in the sidebar (replace with assets/img/profile.jpg once you add one)
+avatar: "https://github.com/santoshmokashi86.png"
+
+# Sidebar contact / links
+email: "santoshmokashi3754@gmail.com"
+location: "Bengaluru, India"
+cv: "/docs/cv/Santosh_Mokashi_CV.pdf"
+github_username: "santoshmokashi86"
+linkedin: "https://www.linkedin.com/in/santosh-mokashi"
+# TODO: replace with your Google Scholar profile URL (…/citations?user=XXXX)
+scholar: "https://scholar.google.com/scholar?q=%22Santosh+Hanamappa+Mokashi%22"
+arxiv: "https://arxiv.org/a/mokashi_s_1"
+
+# Navigation (sidebar)
+nav:
+  - title: Home
+    url: /
+  - title: Publications
+    url: /publications.html
+  - title: Projects
+    url: /projects.html
+  - title: News
+    url: /news.html
+  - title: Blog
+    url: /blog.html
+
+permalink: /posts/:title.html
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+  - scope: { path: "" }
+    values: { layout: default }
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude: [README.md, Gemfile, Gemfile.lock, vendor]

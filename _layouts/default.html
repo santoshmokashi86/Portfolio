@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
+        {% if site.avatar %}
+          {% assign avatar = site.avatar %}
+          {% unless avatar contains "://" %}{% assign avatar = avatar | relative_url %}{% endunless %}
+          <img class="avatar" src="{{ avatar }}" alt="Photo of {{ site.author }}" />
+        {% endif %}
+
+        <p class="tagline">Computer Architecture · DRAM &amp; Memory Systems · AI Hardware</p>
+
+        <p>
+          Email: <a href="mailto:{{ site.email }}">{{ site.email | replace: "@", " [at] " }}</a><br>
+          GitHub: <a href="https://github.com/{{ site.github_username }}">{{ site.github_username }}</a><br>
+          LinkedIn: <a href="{{ site.linkedin }}">santosh-mokashi</a><br>
+          <a href="{{ site.scholar }}">Google Scholar</a> · <a href="{{ site.arxiv }}">arXiv</a> · <a href="{{ site.cv | relative_url }}">CV</a>
+        </p>
+
+        <nav>
+          {% for item in site.nav %}
+            {% assign item_url = item.url | relative_url %}
+            <a href="{{ item_url }}"{% if page.url == item.url %} class="active"{% endif %}>{{ item.title }}</a>{% unless forloop.last %} · {% endunless %}
+          {% endfor %}
+        </nav>
+
+        <p class="news">News <small>[<a href="{{ "/news.html" | relative_url }}">more</a>]</small><br>
+          {% for n in site.data.news limit: 4 %}
+            <small><span class="date">{{ n.date }}</span> {{ n.text }}</small><br>
+          {% endfor %}
+        </p>
+
+        <p class="credit"><small>Theme adapted from <a href="https://github.com/eugenielai/eugenielai.github.io">eugenielai.github.io</a> / <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </header>
+
+      <section>
+      {{ content }}
+      </section>
+    </div>
+  </body>
+</html>
